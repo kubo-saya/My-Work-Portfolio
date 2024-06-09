@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+/* ----------mobile-------------- */
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    Meiryo,
+    Arial,
+    "Helvetica Neue",
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 14px;
+  padding: 0 4%;
+  color:rgb(36, 41, 46);
+}
+
+.container h2 {
+  text-align: center;
+  padding: 85px 0 75px 0;
+  font-size: 24px;
+}
+
+/* img {
+  vertical-align: bottom;
+} */
+
+.main-image {
+  /* background-color: yellow; */
+  height: 300px;
+}
+
+
+
+/* --------header-------- */
+/* header {
+  background-color: pink;
+} */
+
+
+h1 {
+  text-align: center;
+  font-size: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 13px;
+  padding-bottom:16px;
+}
+
+ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li:hover {
+  opacity: 0.7;
+}
+
+
+
+/* --------main image-------- */
+
+.main-image img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+/* -----------about----------- */
+/* .about {
+  background-color: antiquewhite;
+} */
+
+
+address {
+  font-style: normal;
+}
+
+address div {
+  margin-bottom: 32px;
+}
+
+
+/* -----------work------------ */
+.work img {
+  width: 100%;
+  height: auto;
+  padding-top:20px;
+}
+
+/* -----------news------------ */
+.news div {
+  padding: 16px;
+  border-top: 1px solid silver;
+}
+
+.news div:last-child {
+  border-bottom: 1px solid silver;
+}
+
+
+/* -----------contact------------ */
+.form div {
+  margin-bottom: 8px;
+}
+
+input,textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid silver;
+  padding: 8px;
+}
+
+input {
+  height: 42px;
+}
+
+textarea {
+  height: 160px;
+} 
+
+ button {
+  all:unset;
+  text-align: center;
+ }
+ 
+ button a {
+  display: block;
+  background:#24292e;
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  height: 52px;
+  line-height: 52px;
+ }
+
+ .button {
+  text-align: center;
+  margin-top:38px;
+ }
+
+ button a:hover {
+  background:white;
+  color:black ;
+  border: 1px solid black;
+ }
+
+ 
+
+
+ /* -----------footer------------ */
+ footer {
+  text-align: center;
+  background-color: #24292e;
+  font-size: 8px;
+  color: white;
+  height: 32px;
+  margin-top: 72px;
+ }
+
+ small {
+  line-height: 32px;
+ }
+
+
+  /* ------------------PC screen------------ */
+  
+  /* -------------header-------------------- */
+ @media(min-width:600px) {
+
+header {
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  height: 270px;
+}
+
+h1,ul {
+  padding: 0;
+}
+
+ul {
+  width: 316px;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.main-image img {
+  height: 420px;
+}
+
+  /* -------------work-------------------- */
+
+.work-image {
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+.work-image img {
+  width: calc((100% - 60px) / 3);
+  padding-top: 0;
+}
+
+  /* -------------news------------------- */
+.news div {
+  display: flex;
+  gap: 10%;
+}
+
+
+  /* -------------contact------------------- */
+label {
+  width:15% ;
+}
+
+  .form-content {
+  display: flex;
+}
+
+ }
